@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN MALL - Sitio Oficial</title>
+    <style>
+        /* ESTILO PROFESIONAL NEÓN ROSS STUDIOS */
+        body {
+            margin: 0; padding: 0;
+            background-color: #0a0a0a; color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('Ross_Studios_logo_fondo_2.png'); /* FONDO CORREGIDO */
+            background-size: cover; background-position: center;
+            background-attachment: fixed; overflow-x: hidden;
+        }
+
+        /* BARRA SUPERIOR PROFESIONAL */
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 20px;
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 3px solid #00ff00;
+            position: sticky; top: 0; z-index: 1000;
+        }
+
+        .home-brand {
+            display: flex; align-items: center; gap: 15px;
+            text-decoration: none; color: white;
+        }
+
+        .home-brand img {
+            height: 50px; filter: drop-shadow(0 0 5px #00ff00);
+        }
+
+        .discord-section {
+            display: flex; align-items: center; gap: 10px;
+        }
+
+        .btn-discord {
+            background-color: #00ff00; /* Verde neón como pediste */
+            color: #000; padding: 10px 20px;
+            border-radius: 5px; text-decoration: none;
+            font-weight: bold; display: flex; align-items: center;
+            gap: 8px; transition: 0.3s;
+        }
+
+        .btn-discord:hover {
+            background-color: #ffffff; box-shadow: 0 0 20px #00ff00;
+        }
+
+        /* CONTENIDO PRINCIPAL */
+        .container {
+            text-align: center; padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.6); /* Sombra para que se lea bien */
+            min-height: 100vh;
+        }
+
+        h1.bienvenida {
+            font-size: 28px; text-transform: uppercase;
+            margin-bottom: 40px; text-shadow: 0 0 15px #00ff00;
+        }
+
+        /* ZONA DEL JUEGO */
+        .game-frame {
+            position: relative; display: inline-block;
+            width: 100%; max-width: 700px;
+        }
+
+        /* Logos Laterales (Dinosaurios) */
+        .side-dino {
+            position: absolute; width: 100px;
+            top: 50%; transform: translateY(-50%); z-index: 10;
+        }
+        .left-dino { left: -60px; }
+        .right-dino { right: -60px; }
+
+        .main-image {
+            width: 100%; border: 4px solid #00ff00;
+            border-radius: 20px; box-shadow: 0 0 30px rgba(0, 255, 0, 0.5);
+        }
+
+        /* BOTÓN JUGAR */
+        .play-area {
+            margin-top: -40px; position: relative; z-index: 20;
+        }
+
+        .btn-play {
+            background: #00ff00; color: #000;
+            padding: 25px 60px; font-size: 26px; font-weight: 900;
+            border-radius: 15px; text-decoration: none;
+            display: inline-block; box-shadow: 0 10px 25px rgba(0, 255, 0, 0.7);
+            transition: 0.3s;
+        }
+
+        .btn-play:hover {
+            transform: scale(1.1); background: #fff;
+        }
+
+        footer {
+            margin-top: 50px; font-size: 14px; color: #00ff00;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="home-brand">
+            <img src="icono_Green_Mall.png" alt="Logo"> <span>HOME</span>
+        </a>
+        
+        <div class="discord-section">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" width="30" alt="Discord Icon">
+            <a href="https://discord.gg/szu5WHpb" class="btn-discord">UNIRSE AL SERVER</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="bienvenida">Bienvenido usuario ven a probar nuestro juego</h1>
+
+        <div class="game-frame">
+            <img src="Dino_Pequeno_Logo.png" class="side-dino left-dino"> <img src="Dino_Pequeno_Logo.png" class="side-dino right-dino"> <img src="ChatGPT_Image_8_ene_2026_22_08_10.png" class="main-image"> <div class="play-area">
+                <img src="bienvenida_Dc_Ross_Clothing.png" style="width: 250px; display: block; margin: 0 auto 10px;" alt="Logo Juego">
+                <a href="https://www.roblox.com/es/games/109331164385438/GREEN-MALL-Vende-Compra-Ropa" class="btn-play">▶ JUGAR AHORA EN ROBLOX</a>
+            </div>
+        </div>
+
+        <footer>
+            PROYECTO GREEN MALL - ROSS STUDIOS
+        </footer>
+    </div>
+
+</body>
+</html>
